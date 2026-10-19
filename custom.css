@@ -1,0 +1,87 @@
+
+        /* Logo */
+        .navbar-brand img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            margin-right: 10px;
+        }
+
+        /* Store Name */
+        .store-name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Navbar link */
+        .navbar-nav .nav-link {
+            font-size: 17px;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: black;
+        }
+
+    .card {
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    .card-img-top {
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .card-title {
+        font-weight: bold;
+    }
+
+    .card-text {
+        color: #666;
+    }
+
+
+
+@font-face {
+    font-family: 'battambang';
+    src: url(./WEEK1/Assets/Battambang\,Koulen\,Moul/Battambang);
+}
+
+@font-face {
+    font-family: 'Koulen';
+    src: url(./WEEK1/Assets/Battambang\,Koulen\,Moul/Koulen);
+}
+
+@font-face {
+    font-family: 'opensanregular';
+    src: url(./WEEK1/Assets/Battambang\,Koulen\,Moul/opensanregular);
+}
+
+@font-face {
+    font-family: OpenSemiBold;
+    src: url(./WEEK1/Assets/Battambang\,Koulen\,Moul/OpenSemiBold);
+}
+
+body{ 
+    font-family: 'battambang' , 'OpenSanSemiBold';
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Koulen' , 'OpenSansemiBold';
+    color: blue;
+}
+
+h1,h2,h3,h4,h5,h6:hover{
+    font-family: 'Koulen' , 'OpenSansemiBold';
+    color:black (72, 215, 127);
+    scale: 1.1;
+    transition: 0.5s;
+}

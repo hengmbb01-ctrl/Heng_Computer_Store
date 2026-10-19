@@ -1,0 +1,319 @@
+/* =========================================
+   GLOBAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    min-height: 75px;
+    background: #ffffff !important;
+    border-bottom: 1px solid #e8e8e8;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    gap: 10px;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.08);
+}
+
+.store-name {
+    font-size: 21px;
+    font-weight: 700;
+    color: #0d6efd;
+    white-space: nowrap;
+}
+
+/* Menu */
+
+.navbar-nav {
+    gap: 8px;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+    background: #eef5ff;
+}
+
+.nav-link.active {
+    color: white !important;
+    background: #0d6efd;
+}
+
+/* =========================================
+   HERO / BANNER
+========================================= */
+
+.hero {
+    background: #ffffff;
+}
+
+.carousel {
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* =========================================
+   HERO TITLE
+========================================= */
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #6b7280;
+}
+
+/* =========================================
+   PRODUCTS SECTION
+========================================= */
+
+section.container {
+    max-width: 1200px;
+}
+
+section h2 {
+    font-size: 34px;
+    font-weight: 800;
+    color: #111827;
+}
+
+section .text-muted {
+    font-size: 16px;
+}
+
+/* =========================================
+   PRODUCT CARD
+========================================= */
+
+.card {
+    border: none !important;
+    border-radius: 16px !important;
+    overflow: hidden;
+    background: #ffffff;
+    transition: all 0.35s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Card hover */
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Product image */
+
+.card-img-top {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    padding: 15px;
+    background: #f8fafc;
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* =========================================
+   CARD BODY
+========================================= */
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+    min-height: 50px;
+}
+
+.card-text {
+    color: #6b7280;
+    font-size: 14px;
+    min-height: 65px;
+}
+
+/* Price */
+
+.card-body h5.text-primary {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0d6efd !important;
+    margin: 10px 0 15px;
+}
+
+/* =========================================
+   VIEW DETAILS BUTTON
+========================================= */
+
+.card .btn-primary {
+    border: none;
+    border-radius: 10px;
+    padding: 11px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #0d6efd;
+    transition: all 0.3s ease;
+}
+
+.card .btn-primary:hover {
+    background: #084298;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(13, 110, 253, 0.3);
+}
+
+/* =========================================
+   PRODUCT ROW SPACING
+========================================= */
+
+.row.g-4 {
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    margin-top: 60px;
+    background: #111827 !important;
+    padding: 30px 20px !important;
+}
+
+footer p {
+    font-size: 15px;
+    color: #d1d5db;
+}
+
+/* =========================================
+   RESPONSIVE TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        padding-top: 15px;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .carousel-item img {
+        height: 350px;
+    }
+}
+
+/* =========================================
+   RESPONSIVE PHONE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .navbar {
+        min-height: 65px;
+    }
+
+    .navbar-brand img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .store-name {
+        font-size: 17px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .carousel-item img {
+        height: 220px;
+    }
+
+    section h2 {
+        font-size: 27px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+
+    .card-title {
+        font-size: 17px;
+    }
+
+    .card-text {
+        font-size: 13px;
+    }
+
+    .card-body h5.text-primary {
+        font-size: 21px;
+    }
+}
